@@ -1,10 +1,31 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar class="navbar">
+    <ion-title>
+      <p class="school-name">{{school_name}}</p>
+      <div class="school-logo" margin><img src="{{logo_url}}" width="50" height="50"></div>
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>NUMEREK</h2>
-  <div>{{numerek}}</div>
+<ion-content>
+  <div class="container" margin>
+    <div class="number-block">
+      <p class="text1">Numerek niepytany na</p>
+      <p class="text1">dzisiaj:</p>
+      <p class="random-number">{{numerek}}</p>
+      <p class="date">{{when}}</p>
+    </div>
+
+    <div class="refresh">
+      <button (click)="reload()">
+        <ion-img style="width: 48px; height: 48px; background: transparent
+          !important;" src="./assets/imgs/refresh.png"></ion-img>
+      </button>
+    </div>
+
+    <div class="timer">
+      <p class="text2">Następne losowanie numerka za:</p>
+      <p class="time">{{odliczanie}}</p>
+    </div>
+  </div>
 </ion-content>
