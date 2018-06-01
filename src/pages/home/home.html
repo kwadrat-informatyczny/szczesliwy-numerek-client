@@ -1,10 +1,29 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 </ion-header>
 
-<ion-content padding>
-  <h2>NUMEREK</h2>
-  <div>{{numerek}}</div>
+
+<ion-content style="background-color:#0e0e0e;" ng-controller="MyController">
+
+  <div id="naglowek" > zs1.bochnia.pl <img id="logo" src="logo.png" > </div>
+
+
+  <div id="numerek"> Numerek niepytany na dzisiaj: <br>
+  <p id="los">4</p>
+
+
+  <button ion-button icon-only round clear large color="light" onClick="location.href=location.href ;" id="przycisk">
+    <ion-icon name="refresh"></ion-icon>
+  </button>
+
+  </div>
+
+  <div id="czas"> Następne losowanie numerka za:
+    <div id="the-final-countdown">
+        <p></p>
+    </div>
+   </div>
 </ion-content>

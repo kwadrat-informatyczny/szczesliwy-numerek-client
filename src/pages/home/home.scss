@@ -1,3 +1,72 @@
 page-home {
 
+  .ion-content {
+    width:360px;
+    height: 640px; }
+
+  .material-icons {color:#515151 ;}
+
+  #naglowek {
+   padding:10px;
+   background-color:#000000;
+   border-bottom: 2px solid #333302;
+   width:100%;
+   text-align:center;
+   color:#a6a6a6;
+   font-family: 'Roboto', sans-serif;
+   font-size:35px;}
+
+  #logo {
+   width:90px;
+   height:90px;}
+
+  #numerek {
+   position: absolute;
+   top:180px;
+   left:50px;
+   width: 250px;
+   height: 270px;
+   color:#ffff00;
+   border-radius: 15px ; border: 1px solid  #5a5a5a ;
+   box-shadow: 0 0 6px white ;
+   font-size:22px;
+   padding-top:10px;
+   padding-left:10px;
+   padding-right:10px;
+   text-align:center;}
+
+   #los {
+    align: center;
+    position: relative;
+    top:-60%;
+  text-shadow:
+  0 0 5px white,
+  0 0 5px white;
+   font-size:150px;
+   color:white;}
+
+  #przycisk {
+      align: center;
+     position: relative;
+     top:-260px;
+      height: 45px;
+      width: 45px;}
+
+  #czas {
+  	position: absolute;
+      top: 90%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+   width: 100%;
+   color:white;
+   font-size:22px;
+   text-align:center;}
+
+   #the-final-countdown {
+    color:white;
+    font-size:38px;}
+
+
 }
